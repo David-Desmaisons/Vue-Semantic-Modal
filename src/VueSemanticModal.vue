@@ -38,7 +38,7 @@ const closing = 'closing'
 const changeRequest = 'changeRequest'
 
 function addClass (inicial, name) {
-    return name === '' ? inicial : `{inicial} ${name}`
+    return name === '' ? inicial : `${inicial} ${name}`
 }
 
 function withDirections (animation){
@@ -135,14 +135,14 @@ export default {
 
     mounted () {
         const modal = this.$el.querySelector('.ui.modal')
-        modal.addEventListener(eventAnimationEnd, this.onAnimationEnded, false)
         this.modal = modal
         this.offsetY = -modal.clientHeight / 2
         this.loading = false
+        this.$el.addEventListener(eventAnimationEnd, this.onAnimationEnded, false)
     },
 
     beforeDestroy () {
-        this.modal.removeEventListener(eventAnimationEnd, this.onAnimationEnded, false)
+        this.$el.removeEventListener(eventAnimationEnd, this.onAnimationEnded, false)
     },
 
     methods: {
