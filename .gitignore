@@ -3,5 +3,4 @@ node_modules/
 npm-debug.log
 /example/simple/bower_components/
 dist
-components
 /semantic/
