@@ -1,4 +1,4 @@
-# Vue.Semantic.Modal
+# Vue-Semantic-Modal
 
 Modal component for [semantic-ui](https://semantic-ui.com/) without jQuery
 
