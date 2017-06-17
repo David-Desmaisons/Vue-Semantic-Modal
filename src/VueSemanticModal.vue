@@ -16,7 +16,7 @@
             </div>
 
             <div class="actions">
-                <slot name="actions" :close="close">
+                <slot name="actions">
                     <div class="ui positive right button" @click="close">
                         OK
                     </div>
@@ -35,7 +35,7 @@ const closed = 'closed'
 const opening = 'opening'
 const opened = 'opened'
 const closing = 'closing'
-const changeRequest = 'changeRequest'
+const changed = 'changed'
 
 function addClass (inicial, name) {
     return name === '' ? inicial : `${inicial} ${name}`
@@ -45,7 +45,7 @@ function withDirections (animation){
     return [`${animation} up`, `${animation} down`, `${animation} left`, `${animation} right`]
 }
 
-const dimmerVariations = ['', 'blurring', 'inverted']
+const dimmerVariations = ['', 'inverted']
 const modalVariations = ['', 'fullscreen', 'basic', 'small', 'large']
 const modalTransitions = ['scale', 'drop', 'horizontal flip', 'vertical flip', 'fade', ...withDirections( 'fade'), ...withDirections( 'fly'), ...withDirections( 'swing')]
 const props = {
@@ -130,7 +130,7 @@ export default {
 
     model: {
         prop: 'opened',
-        event: changeRequest
+        event: changed
     },
 
     mounted () {
@@ -147,15 +147,11 @@ export default {
 
     methods: {
         close () {
-            const evt = {
-                cancel:false
-            }
-            this.$emit('closing', evt)
-            !evt.cancel && this.$emit(changeRequest, false)
+            this.$emit(changed, false)
         },
 
         open () {
-            this.$emit(changeRequest, true)
+            this.$emit(changed, true)
         },
 
         clickAway () {
@@ -172,7 +168,6 @@ export default {
 
     watch: {
         opened (newValue) {
-            this.$emit('changed', newValue)
             this.visualState = newValue? opening : closing
         },
         visualState (newValue) {

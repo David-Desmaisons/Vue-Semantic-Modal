@@ -1,12 +1,9 @@
 <template>
   <div class="hello">
-
-
     <div class="ui container">
 
       <form class="ui form">
       <h4 class="ui dividing header">Modal Props</h4>
-
 
       <div class="three fields">
         <div class="field">
@@ -87,10 +84,10 @@
       </template>
 
       <template slot="actions" scope="props">
-        <div class="ui black deny button" @click="props.close">
+        <div class="ui black deny button" @click="showModal = false">
           Nope
         </div>
-        <div class="ui positive right labeled icon button" @click="props.close">
+        <div class="ui positive right labeled icon button" @click="showModal = false">
           Yep, that's me
           <i class="checkmark icon"></i>
         </div>
@@ -122,7 +119,7 @@ export default {
       dimmerVariation: '',
       modalVariation: '',
       modalTransition: 'scale',
-      dimmerVariations : ['', 'blurring', 'inverted'],
+      dimmerVariations : ['', 'inverted'],
       modalVariations : ['', 'fullscreen', 'basic', 'small', 'large'],
       modalTransitions : ['scale', 'drop', 'horizontal flip', 'vertical flip', 'fade', ...withDirections( 'fade'), ...withDirections( 'fly'), ...withDirections( 'swing')]
     }
