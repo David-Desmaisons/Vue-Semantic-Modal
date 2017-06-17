@@ -3,7 +3,7 @@
 Modal component for [semantic-ui](https://semantic-ui.com/) without jQuery
 
 [![GitHub open issues](https://img.shields.io/github/issues/David-Desmaisons/Vue.Semantic.Modal.svg?maxAge=2592000)](https://github.com/David-Desmaisons/Vue.Semantic.Modal/issues)
-[![Npm version](https://img.shields.io/npm/v/vue_semantic_modal.svg?maxAge=2592000)](https://www.npmjs.com/package/vue_semantic_modal)
+[![Npm version](https://img.shields.io/npm/v/vue-semantic-modal.svg?maxAge=2592000)](https://www.npmjs.com/package/vue-semantic-modal)
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 [![MIT License](https://img.shields.io/github/license/David-Desmaisons/Vue.D3.tree.svg)](https://github.com/David-Desmaisons/Vue.Semantic.Modal/LICENSE)
 
