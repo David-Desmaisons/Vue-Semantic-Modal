@@ -83,7 +83,7 @@
         </div>
       </template>
 
-      <template slot="actions" scope="props">
+      <template slot="actions">
         <div class="ui black deny button" @click="showModal = false">
           Nope
         </div>
