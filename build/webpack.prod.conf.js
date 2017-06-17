@@ -10,7 +10,7 @@ var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
   entry: {
-    "VueSemanticModal": './src/VueSemanticModal.js'
+    "VueSemanticModal": './src/VueSemanticModal.vue'
   },
   module: {
     loaders: utils.styleLoaders({ sourceMap: config.build.productionSourceMap, extract: true })

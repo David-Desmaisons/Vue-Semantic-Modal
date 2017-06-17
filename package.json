@@ -1,6 +1,6 @@
 {
   "name": "vue-semantic-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue.js 2.0 modal component for semantic UI",
   "main": "dist/VueSemanticModal.js",
   "files": [
