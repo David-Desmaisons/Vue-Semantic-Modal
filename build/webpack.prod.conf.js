@@ -30,12 +30,12 @@ var webpackConfig = merge(baseWebpackConfig, {
       amd: 'vue'
     }
   },
-  vue: {
-    loaders: utils.cssLoaders({
-      sourceMap: config.build.productionSourceMap,
-      extract: true
-    })
-  },
+  // vue: {
+  //   loaders: utils.cssLoaders({
+  //     sourceMap: config.build.productionSourceMap,
+  //     extract: true
+  //   })
+  // },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
