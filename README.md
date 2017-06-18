@@ -78,7 +78,6 @@ Include in the root component semantic-ui CSS:
 | hasImage   | no | `Boolean`  | false |  Should be true if the content contains image as per semantic-ui specification |
 | animationDuration | no | `Number` |  500       | Opening and closing animation duration in ms |
 | showCloseIcon    | no | `Boolean`          | false       | If true close icon of the model is displayed |
-| closeOnClickAway    | no | `Boolean`           | true            | If true the modal is closed when clicking outside |
 | modalVariation   | no | `'fullscreen', 'basic', 'small', 'large' or ''`  | '' |  Additional modal styling [see here](https://semantic-ui.com/modules/modal.html#/definition) |
 | dimmerVariation   | no | `'inverted' or ''`  | '' |  Additional dimmer styling [see here](https://semantic-ui.com/modules/modal.html#/examples) |
 | modalTransition   | no | `String`  | 'scale'|  name of the modal transition to be applied. [See here](https://semantic-ui.com/modules/transition.html) |
@@ -94,6 +93,11 @@ Sent when the modal state changed with a boolean true if the modal is opened
 Sent when the modal visual state changed with a string representing the modal visual state:
 
 `'closed', 'opening', 'opened', 'closing'`
+
+* `clickAwayModal`
+
+Sent when modal is opened and user click outside.
+
 
 # Installation
 - Available through:
