@@ -65,10 +65,6 @@ const props = {
         type: Boolean,
         default: false
     },
-    closeOnClickAway: {
-        type: Boolean,
-        default: true
-    },
     dimmerVariation: {
         type: String,
         default: '',
@@ -155,10 +151,10 @@ export default {
         },
 
         clickAway () {
-            if (!this.opened || this.visualState===opening || !this.closeOnClickAway) {
+            if (this.visualState!==opened) {
                 return
             }
-            this.close()
+            this.$emit('clickAwayModal')
         },
 
         onAnimationEnded () {

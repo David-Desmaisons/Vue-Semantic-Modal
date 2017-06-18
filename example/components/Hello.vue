@@ -36,22 +36,15 @@
       </div>
 
       <div class="field">
-        <div class="three fields">
-          <div class="four wide field">
-              <div class="ui toggle checkbox">
-                <input v-model="closeOnClickAway" type="checkbox">
-                <label>Close On ClickAway</label>
-              </div>
-          </div>
-
-          <div class="four wide field">
+        <div class="two fields">
+          <div class="field">
             <div class="ui toggle checkbox">
                 <input v-model="showCloseIcon" type="checkbox">
                 <label>Show Close Icon</label>
               </div>
           </div>
 
-          <div class="eight wide field">
+          <div class="field">
             <div class="ui slider range">
                 <input v-model.number="animationDuration" type="range" min="0" max="1000">
                 <label>Animation Duration ({{animationDuration}} ms)</label>
