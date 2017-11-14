@@ -25,7 +25,7 @@ Modal component for [semantic-ui](https://semantic-ui.com/) without jQuery
         <div class="ui black deny button" @click="showModal=false">
           No
         </div>
-        <div class="ui positive right" @click="confirm">
+        <div class="ui positive right button" @click="confirm">
           Yes
         </div>
     </template>
@@ -33,7 +33,7 @@ Modal component for [semantic-ui](https://semantic-ui.com/) without jQuery
 </modal>
 ```
 ```javascript
-import modal from 'vue_semantic_modal'
+import modal from 'vue-semantic-modal'
 
 export default {
   components: {
