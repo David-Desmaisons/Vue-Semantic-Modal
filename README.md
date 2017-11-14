@@ -78,7 +78,7 @@ Include in the root component semantic-ui CSS:
 | hasImage   | no | `Boolean`  | false |  Should be true if the content contains image as per semantic-ui specification |
 | animationDuration | no | `Number` |  500       | Opening and closing animation duration in ms |
 | showCloseIcon    | no | `Boolean`          | false       | If true close icon of the model is displayed |
-| modalVariation   | no | `'fullscreen', 'basic', 'small', 'large' or ''`  | '' |  Additional modal styling [see here](https://semantic-ui.com/modules/modal.html#/definition) |
+| modalVariation   | no | `'fullscreen', 'basic', 'mini', 'small', 'large' or ''`  | '' |  Additional modal styling [see here](https://semantic-ui.com/modules/modal.html#/definition) |
 | dimmerVariation   | no | `'inverted' or ''`  | '' |  Additional dimmer styling [see here](https://semantic-ui.com/modules/modal.html#/examples) |
 | modalTransition   | no | `String`  | 'scale'|  name of the modal transition to be applied. [See here](https://semantic-ui.com/modules/transition.html) |
 
