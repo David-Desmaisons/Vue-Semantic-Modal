@@ -46,7 +46,7 @@ function withDirections (animation){
 }
 
 const dimmerVariations = ['', 'inverted']
-const modalVariations = ['', 'fullscreen', 'basic', 'small', 'large']
+const modalVariations = ['', 'fullscreen', 'basic', 'small', 'mini', 'large']
 const modalTransitions = ['scale', 'drop', 'horizontal flip', 'vertical flip', 'fade', ...withDirections( 'fade'), ...withDirections( 'fly'), ...withDirections( 'swing')]
 const props = {
     opened: {
