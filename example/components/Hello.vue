@@ -9,7 +9,7 @@
         <div class="field">
           <label>Modal Varition</label>
           <select v-model="modalVariation" class="ui fluid dropdown">
-              <option v-for="option in modalVariations" :value="option">
+              <option v-for="option in modalVariations" :value="option" :key="option">
                   {{ option }}
               </option>
           </select>
@@ -18,7 +18,7 @@
         <div class="field">
           <label>Dimmer Varition</label>
           <select v-model="dimmerVariation" class="ui fluid dropdown">
-            <option v-for="option in dimmerVariations" :value="option">
+            <option v-for="option in dimmerVariations" :value="option" :key="option">
                   {{ option }}
               </option>
           </select>
@@ -27,7 +27,7 @@
         <div class="field">
           <label>Modal Transition</label>
           <select v-model="modalTransition" class="ui fluid dropdown">
-              <option v-for="option in modalTransitions" :value="option">
+              <option v-for="option in modalTransitions" :value="option" :key="option">
                   {{ option }}
               </option>
           </select>
@@ -113,7 +113,7 @@ export default {
       modalVariation: '',
       modalTransition: 'scale',
       dimmerVariations : ['', 'inverted'],
-      modalVariations : ['', 'fullscreen', 'basic', 'small', 'large'],
+      modalVariations : ['', 'fullscreen', 'basic', 'small', 'mini', 'large'],
       modalTransitions : ['scale', 'drop', 'horizontal flip', 'vertical flip', 'fade', ...withDirections( 'fade'), ...withDirections( 'fly'), ...withDirections( 'swing')]
     }
   },
